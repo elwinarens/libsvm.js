@@ -12,7 +12,7 @@ function svm_problem(l, y, x) {
     /**
      * @type {Array} double[]
      */
-    this.y = y; // double[]
+    this.y = y;
 
     /**
      * @type {Array} svm_node[][]
