@@ -1,0 +1,20 @@
+#!/bin/sh
+
+. bin/base
+
+info "Checking Google Closure compiler"
+
+if [ ! -f "$BIN_DIR/compiler.jar" ]; then
+info "Google Closure compiler.jar not found in $BIN_DIR."
+
+    if [ ! -f "$TMP_DIR/compiler-latest.zip" ]; then
+        info "Google Closure compiler-latest.zip not found. Starting download"
+        wget https://dl.google.com/closure-compiler/compiler-latest.zip -P "$TMP_DIR"
+        ok "Successfully downloaded Google Closure compiler"
+    fi
+    unzip -o "$TMP_DIR/compiler-latest.zip" -d "$TMP_DIR"
+    mv "$TMP_DIR/compiler.jar" "$BIN_DIR/."
+    ok "Installed compiler.jar into $BIN_DIR"
+else
+    ok "Google Closure compiler.jar found in $BIN_DIR"
+fi

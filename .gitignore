@@ -1,1 +1,4 @@
 .vagrant
+compiler.jar
+libsvm.js
+tmp

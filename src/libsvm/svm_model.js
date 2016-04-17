@@ -1,3 +1,7 @@
+/**
+ * svm_model
+ * @constructor
+ */
 function svm_model() {
     /**
      *  @type {Object} svm_parameter
@@ -6,13 +10,13 @@ function svm_model() {
 
     /**
      *  number of classes = 2 in regression/one class svm
-     *  @type {number} int
+     *  @type {Number} int
      */
     this.nr_class;
 
     /**
      *  total #SV
-     *  @type {number} int
+     *  @type {Number} int
      */
     this.l;
 

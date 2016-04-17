@@ -1,11 +1,12 @@
 /**
- * @param  {number} l int
+ * @constructor
+ * @param  {Number} l int
  * @param  {Array} y double[]
  * @param  {Array} x svm_node[][]
  */
 function svm_problem(l, y, x) {
     /**
-     * @type {number} int
+     * @type {Number} int
      */
     this.l = l;
 

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. bin/base
+
+info "Updating apt-get"
+sudo apt-get update
+
+info "Installing applications via apt-get"
+sudo apt-get -y install --no-install-recommends default-jre unzip

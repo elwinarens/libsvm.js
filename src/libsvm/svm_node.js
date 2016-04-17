@@ -1,15 +1,16 @@
 /**
- * @param  {number} index int
- * @param  {number} value double
+ * @constructor
+ * @param  {Number} index int
+ * @param  {Number} value double
  */
 function svm_node(index, value) {
     /**
-     * @type {number} int
+     * @type {Number} int
      */
     this.index = index;
 
     /**
-     * @type {number} double
+     * @type {Number} double
      */
     this.value = value;
 }

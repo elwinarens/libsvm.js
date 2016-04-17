@@ -1,3 +1,6 @@
+/**
+ * @constructor
+ */
 function svm_parameter() {
     /**
      * @type {number} int

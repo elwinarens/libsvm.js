@@ -1,0 +1,28 @@
+#!/bin/sh
+
+set -e
+
+R='\033[0;31m'
+G='\033[0;32m'
+C='\033[0m'
+B='\033[1m'
+
+msg() {
+    echo "[${B}LIBSVM.JS${C}] $1"
+}
+
+info() {
+    msg "$1 ..."
+}
+
+ok() {
+    msg "$1 ... ${G}${B}OK${C}"
+}
+
+err() {
+    msg "$1 ... ${R}${B}ERROR${C}"
+}
+
+HOME=$(pwd)
+TMP_DIR="$HOME/tmp"
+BIN_DIR="$HOME/bin"
